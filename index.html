@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khalida Benamar — Portfolio BTS SIO SISR</title>
+
+  <!-- ================================================
+       FEUILLE DE STYLE EXTERNE
+       ================================================ -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts : Playfair Display (display) + Space Mono (mono) + Nunito (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Space+Mono:wght@400;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icônes Lucide -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ================================================
+       CURSEUR PERSONNALISÉ
+       ================================================ -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- ================================================
+       NAVIGATION FIXE
+       ================================================ -->
+  <nav class="navbar" id="navbar">
+
+    <!-- Logo initiales -->
+    <a href="#accueil" class="nav-logo">KB<span class="logo-accent">.</span></a>
+
+    <!-- Liens desktop -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#accueil"     class="nav-link">Accueil</a></li>
+      <li><a href="#apropos"     class="nav-link">À propos</a></li>
+      <li><a href="#competences" class="nav-link">Compétences</a></li>
+      <li><a href="#projets"     class="nav-link">Projets</a></li>
+      <li><a href="#veilles"     class="nav-link">Veilles</a></li>
+      <li><a href="#e5"          class="nav-link">Épreuve E5</a></li>
+      <li><a href="#contact"     class="nav-link">Contact</a></li>
+    </ul>
+
+    <!-- Bouton CV -->
+    <a href="CV_Khalida_Benamar.pdf" download class="btn-nav-cv">
+      <i data-lucide="download" class="icon-sm"></i> CV
+    </a>
+
+    <!-- Burger mobile -->
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ================================================
+       SECTION 1 — ACCUEIL (HERO)
+       ================================================ -->
+  <section id="accueil" class="hero">
+
+    <!-- Fond animé : grille + orbes -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-inner">
+
+      <!-- Colonne gauche : texte -->
+      <div class="hero-text">
+
+        <!-- Badge disponibilité -->
+        <div class="availability-badge">
+          <span class="pulse-dot"></span>
+          Disponible — Stage juillet 2026 &amp; Alternance sept. 2026
+        </div>
+
+        <!-- Nom principal -->
+        <h1 class="hero-name">
+          <span class="name-first">Khalida</span>
+          <span class="name-last">Benamar</span>
+        </h1>
+
+        <!-- Titre métier avec typewriter -->
+        <p class="hero-role">
+          <span class="role-prefix">// </span>
+          <span id="typewriter"></span><span class="caret">▌</span>
+        </p>
+
+        <!-- Accroche courte -->
+        <p class="hero-pitch">
+          Étudiante en <strong>BTS SIO option SISR</strong> à Nexa Digital School — Paris.
+          Passionnée par les réseaux, la sécurité et l'administration systèmes.
+          Issue d'un Bac Mathématiques et d'une Licence Programmation à la Sorbonne,
+          j'apporte rigueur analytique et logique structurée à chaque défi technique.
+        </p>
+
+        <!-- Appels à l'action -->
+        <div class="hero-cta">
+          <a href="#projets" class="btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn-outline">Me contacter</a>
+        </div>
+
+        <!-- Liens rapides réseaux sociaux -->
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/khalidabenamar-14555a2bb" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:khalidabenamar66@gmail.com" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
+          <a href="tel:0623060414" aria-label="Téléphone">
+            <i data-lucide="phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Colonne droite : carte identité visuelle -->
+      <div class="hero-card-wrap">
+        <div class="id-card">
+          <!-- Photo placeholder / avatar -->
+          <div class="id-photo">
+            <svg viewBox="0 0 160 180" xmlns="http://www.w3.org/2000/svg">
+              <rect width="160" height="180" fill="#1a1a2e"/>
+              <circle cx="80" cy="65" r="38" fill="#e63946" opacity=".8"/>
+              <ellipse cx="80" cy="170" rx="58" ry="42" fill="#e63946" opacity=".6"/>
+            </svg>
+            <div class="id-photo-label">Khalida B.</div>
+          </div>
+          <!-- Infos sur la carte -->
+          <div class="id-info">
+            <div class="id-row"><span class="id-key">Formation</span><span class="id-val">BTS SIO SISR</span></div>
+            <div class="id-row"><span class="id-key">École</span><span class="id-val">Nexa Digital School</span></div>
+            <div class="id-row"><span class="id-key">Promo</span><span class="id-val">2025 → 2027</span></div>
+            <div class="id-row"><span class="id-key">Lieu</span><span class="id-val">Île-de-France</span></div>
+            <div class="id-row"><span class="id-key">Dispo.</span><span class="id-val id-green">Immédiate</span></div>
+          </div>
+          <!-- Bande décorative bas de carte -->
+          <div class="id-strip">
+            <span>SISR</span><span>·</span><span>RÉSEAU</span><span>·</span><span>SÉCURITÉ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicateur scroll -->
+    <a href="#apropos" class="scroll-hint" aria-label="Défiler">
+      <i data-lucide="chevrons-down"></i>
+    </a>
+  </section>
+
+  <!-- ================================================
+       SECTION 2 — À PROPOS
+       ================================================ -->
+  <section id="apropos" class="section">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="section-line"></div>
+      </header>
+
+      <div class="about-layout">
+
+        <!-- Bloc texte -->
+        <div class="about-body">
+          <p class="about-intro">
+            Je m'appelle <strong>Khalida Benamar</strong>, j'ai 21 ans et je suis étudiante en
+            première année de <strong>BTS SIO option SISR</strong> à Nexa Digital School, Paris,
+            depuis septembre 2025.
+          </p>
+          <p>
+            Mon parcours est atypique et c'est ma force : après un
+            <strong>Baccalauréat Mathématiques</strong> (2022), j'ai intégré une
+            <strong>Licence en Programmation à la Sorbonne USPN</strong> (2023–2025)
+            où j'ai développé des bases solides en algorithmie, langage C/C++ et Python.
+            Cette expérience académique nourrit aujourd'hui ma vision des infrastructures
+            systèmes et réseaux.
+          </p>
+          <p>
+            Passionnée de mathématiques et de logique, j'aborde les problèmes réseau et
+            sécurité avec méthode et rigueur. Je parle <strong>arabe</strong> (bilingue)
+            et <strong>anglais</strong> (niveau technique).
+          </p>
+
+          <!-- Ce que je cherche -->
+          <div class="recherche-box">
+            <i data-lucide="search"></i>
+            <div>
+              <strong>Ce que je recherche</strong>
+              <p>
+                Un <em>stage d'immersion dès juillet 2026</em> pour valider ma 1ère année,
+                puis un <em>contrat d'alternance de septembre 2026 à septembre 2027</em>
+                (rythme 3j entreprise / 2j école) en tant que Technicienne Systèmes &amp; Réseaux.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline formation & expériences -->
+        <div class="about-timeline">
+          <h3 class="timeline-title">Mon parcours</h3>
+
+          <div class="tl-item">
+            <div class="tl-icon edu"><i data-lucide="graduation-cap"></i></div>
+            <div class="tl-body">
+              <span class="tl-date">Sept. 2025 → Sept. 2027</span>
+              <strong>BTS SIO — Option SISR</strong>
+              <p>Nexa Digital School, Paris</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon edu"><i data-lucide="book-open"></i></div>
+            <div class="tl-body">
+              <span class="tl-date">2023 → 2025</span>
+              <strong>Licence 1-2 Programmation</strong>
+              <p>Sorbonne USPN, Paris</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon edu"><i data-lucide="award"></i></div>
+            <div class="tl-body">
+              <span class="tl-date">2022</span>
+              <strong>Baccalauréat Mathématiques</strong>
+              <p>Mention obtenue</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon work"><i data-lucide="briefcase"></i></div>
+            <div class="tl-body">
+              <span class="tl-date">Depuis août 2024</span>
+              <strong>Suppléante Responsable Caisse</strong>
+              <p>Intermarché, Paris — Management, résolution de problèmes</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon work"><i data-lucide="scale"></i></div>
+            <div class="tl-body">
+              <span class="tl-date">2020 → 2023</span>
+              <strong>Secrétaire Juridique</strong>
+              <p>Cabinet Maître Benamar &amp; Lamrani, Alger — Gestion, rigueur, confidentialité</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 3 — COMPÉTENCES
+       ================================================ -->
+  <section id="competences" class="section section-alt">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Compétences techniques</h2>
+        <div class="section-line"></div>
+      </header>
+
+      <!-- Grille des blocs compétences -->
+      <div class="skills-grid">
+
+        <!-- Réseaux -->
+        <div class="skill-card" data-aos>
+          <div class="skill-head">
+            <div class="skill-icon net"><i data-lucide="network"></i></div>
+            <h3>Gestion des Réseaux</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Modèle OSI</li><li>Architecture TCP/IP</li>
+            <li>Adressage IPv4 / CIDR</li><li>DHCP · DNS · ICMP · ARP</li>
+            <li>VLANs</li><li>Commutateurs Cisco</li><li>Routage statique</li>
+          </ul>
+          <div class="skill-level">
+            <span>Niveau</span>
+            <div class="level-bar"><div class="level-fill" style="--w:78%"></div></div>
+            <span class="level-pct">78 %</span>
+          </div>
+        </div>
+
+        <!-- Administration systèmes -->
+        <div class="skill-card" data-aos>
+          <div class="skill-head">
+            <div class="skill-icon sys"><i data-lucide="server"></i></div>
+            <h3>Administration Systèmes</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Windows Server</li><li>Active Directory</li>
+            <li>GPO</li><li>Linux Debian</li>
+            <li>Ubuntu Server</li><li>Gestion utilisateurs &amp; groupes</li>
+          </ul>
+          <div class="skill-level">
+            <span>Niveau</span>
+            <div class="level-bar"><div class="level-fill" style="--w:75%"></div></div>
+            <span class="level-pct">75 %</span>
+          </div>
+        </div>
+
+        <!-- Scripting & Programmation -->
+        <div class="skill-card" data-aos>
+          <div class="skill-head">
+            <div class="skill-icon code"><i data-lucide="code-2"></i></div>
+            <h3>Scripting &amp; Programmation</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Python</li><li>Bash (Linux)</li>
+            <li>Automatisation réseau</li><li>C · C++ (notions)</li>
+            <li>Scripts de surveillance</li>
+          </ul>
+          <div class="skill-level">
+            <span>Niveau</span>
+            <div class="level-bar"><div class="level-fill" style="--w:72%"></div></div>
+            <span class="level-pct">72 %</span>
+          </div>
+        </div>
+
+        <!-- Virtualisation -->
+        <div class="skill-card" data-aos>
+          <div class="skill-head">
+            <div class="skill-icon virt"><i data-lucide="layers"></i></div>
+            <h3>Virtualisation</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Hyper-V</li><li>VMware Workstation</li>
+            <li>Oracle VirtualBox</li><li>Déploiement VMs</li>
+            <li>Infrastructure virtuelle</li>
+          </ul>
+          <div class="skill-level">
+            <span>Niveau</span>
+            <div class="level-bar"><div class="level-fill" style="--w:70%"></div></div>
+            <span class="level-pct">70 %</span>
+          </div>
+        </div>
+
+        <!-- Sécurité -->
+        <div class="skill-card" data-aos>
+          <div class="skill-head">
+            <div class="skill-icon secu"><i data-lucide="shield"></i></div>
+            <h3>Sécurité Informatique</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>ACL (droits d'accès)</li><li>Filtrage pare-feu</li>
+            <li>Kali Linux (initiation)</li><li>Tests d'intrusion</li>
+            <li>Sécurisation postes</li>
+          </ul>
+          <div class="skill-level">
+            <span>Niveau</span>
+            <div class="level-bar"><div class="level-fill" style="--w:65%"></div></div>
+            <span class="level-pct">65 %</span>
+          </div>
+        </div>
+
+        <!-- Langues & soft skills -->
+        <div class="skill-card" data-aos>
+          <div class="skill-head">
+            <div class="skill-icon lang"><i data-lucide="globe"></i></div>
+            <h3>Langues &amp; Soft Skills</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Arabe — Bilingue</li><li>Anglais — Technique</li>
+            <li>Rigueur analytique</li><li>Résolution de problèmes</li>
+            <li>Autonomie</li><li>Sens du service</li>
+          </ul>
+          <div class="skill-level">
+            <span>Niveau</span>
+            <div class="level-bar"><div class="level-fill" style="--w:90%"></div></div>
+            <span class="level-pct">90 %</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 4 — PROJETS ACADÉMIQUES
+       ================================================ -->
+  <section id="projets" class="section">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projets académiques</h2>
+        <div class="section-line"></div>
+      </header>
+
+      <div class="projects-grid">
+
+        <!-- Projet 1 : Script surveillance réseau -->
+        <article class="project-card" data-aos>
+          <div class="project-banner banner-py">
+            <i data-lucide="activity"></i>
+            <span class="project-date">Depuis avril 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="project-chips">
+              <span class="chip">Python</span>
+              <span class="chip">Réseau</span>
+              <span class="chip">Automatisation</span>
+            </div>
+            <h3>Scripting de surveillance réseau</h3>
+            <p>
+              Développement d'un script Python réalisant des tests de connectivité (Ping)
+              réguliers sur des équipements cibles, avec génération d'alertes automatiques
+              en cas de coupure réseau détectée.
+            </p>
+            <ul class="project-details">
+              <li><i data-lucide="check-circle"></i> Ping automatisé sur liste d'équipements</li>
+              <li><i data-lucide="check-circle"></i> Système d'alerte en cas de défaillance</li>
+              <li><i data-lucide="check-circle"></i> Logs horodatés des incidents</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="proj-link"><i data-lucide="file-text"></i> Rapport</a>
+              <a href="#" class="proj-link"><i data-lucide="github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 2 : Infrastructure réseau virtuelle -->
+        <article class="project-card" data-aos>
+          <div class="project-banner banner-net">
+            <i data-lucide="server"></i>
+            <span class="project-date">Janv. → Mars 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="project-chips">
+              <span class="chip">VirtualBox</span>
+              <span class="chip">Windows Server</span>
+              <span class="chip">DHCP · DNS</span>
+            </div>
+            <h3>Déploiement d'une infrastructure réseau locale virtuelle</h3>
+            <p>
+              Conception d'un réseau local virtuel sous VirtualBox avec contrôleur de domaine
+              Windows Server, clients Linux et Windows, et centralisation des services réseau.
+            </p>
+            <ul class="project-details">
+              <li><i data-lucide="check-circle"></i> Contrôleur de domaine Windows Server</li>
+              <li><i data-lucide="check-circle"></i> Serveurs DHCP &amp; DNS configurés</li>
+              <li><i data-lucide="check-circle"></i> Scripts de création de comptes utilisateurs</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="proj-link"><i data-lucide="file-text"></i> Rapport</a>
+              <a href="#" class="proj-link"><i data-lucide="github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 3 : Segmentation et sécurisation réseau -->
+        <article class="project-card" data-aos>
+          <div class="project-banner banner-secu">
+            <i data-lucide="shield-check"></i>
+            <span class="project-date">Fév. → Mars 2026</span>
+          </div>
+          <div class="project-body">
+            <div class="project-chips">
+              <span class="chip">VLANs</span>
+              <span class="chip">Firewall</span>
+              <span class="chip">Sécurité</span>
+            </div>
+            <h3>Segmentation et sécurisation d'un réseau de PME</h3>
+            <p>
+              Maquettage d'une architecture réseau avec plusieurs VLANs isolant les services
+              R&amp;D, Administration et Direction, avec filtrage inter-VLAN par pare-feu.
+            </p>
+            <ul class="project-details">
+              <li><i data-lucide="check-circle"></i> VLANs : R&D / Admin / Direction</li>
+              <li><i data-lucide="check-circle"></i> Règles de filtrage Firewall</li>
+              <li><i data-lucide="check-circle"></i> Sécurisation des flux inter-VLAN</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="proj-link"><i data-lucide="file-text"></i> Rapport</a>
+              <a href="#" class="proj-link"><i data-lucide="github"></i> GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 5 — VEILLES TECHNOLOGIQUES
+       ================================================ -->
+  <section id="veilles" class="section section-alt">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Veilles technologiques</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">
+          La veille est une compétence clé du BTS SIO. Je surveille l'actualité
+          des domaines qui me passionnent pour rester à jour.
+        </p>
+      </header>
+
+      <div class="veilles-grid">
+
+        <!-- Veille 1 -->
+        <article class="veille-card" data-aos>
+          <div class="veille-top">
+            <div class="veille-icon v-secu"><i data-lucide="lock"></i></div>
+            <div>
+              <span class="veille-cat">Cybersécurité</span>
+              <span class="veille-date">Mai 2025</span>
+            </div>
+          </div>
+          <h3>Menaces ransomware 2025 : nouvelles techniques d'attaque</h3>
+          <p>
+            Analyse des évolutions des attaques par ransomware ciblant les infrastructures :
+            double extorsion, attaques sur la supply chain logicielle et contournement des EDR.
+          </p>
+          <div class="veille-sources">
+            <i data-lucide="database"></i>
+            Sources : ANSSI · CERT-FR · BleepingComputer · CISA
+          </div>
+          <a href="#" class="veille-read">Lire la synthèse <i data-lucide="arrow-right"></i></a>
+        </article>
+
+        <!-- Veille 2 -->
+        <article class="veille-card" data-aos>
+          <div class="veille-top">
+            <div class="veille-icon v-net"><i data-lucide="wifi"></i></div>
+            <div>
+              <span class="veille-cat">Réseaux</span>
+              <span class="veille-date">Avril 2025</span>
+            </div>
+          </div>
+          <h3>SD-WAN : modernisation des réseaux d'entreprise</h3>
+          <p>
+            Étude de l'adoption du SD-WAN en entreprise pour remplacer les liaisons MPLS.
+            Comparatif des solutions Cisco Viptela, VMware VeloCloud et Fortinet SD-WAN.
+          </p>
+          <div class="veille-sources">
+            <i data-lucide="database"></i>
+            Sources : Cisco Blog · Gartner · LeMagIT · NetworkWorld
+          </div>
+          <a href="#" class="veille-read">Lire la synthèse <i data-lucide="arrow-right"></i></a>
+        </article>
+
+        <!-- Veille 3 -->
+        <article class="veille-card" data-aos>
+          <div class="veille-top">
+            <div class="veille-icon v-sys"><i data-lucide="cpu"></i></div>
+            <div>
+              <span class="veille-cat">Systèmes</span>
+              <span class="veille-date">Mars 2025</span>
+            </div>
+          </div>
+          <h3>Zero Trust Architecture : principes et mise en œuvre</h3>
+          <p>
+            Exploration du modèle Zero Trust appliqué aux SI d'entreprise : segmentation
+            micro, vérification continue des identités et réduction de la surface d'attaque.
+          </p>
+          <div class="veille-sources">
+            <i data-lucide="database"></i>
+            Sources : NIST · Microsoft Security · ANSSI · CSO Online
+          </div>
+          <a href="#" class="veille-read">Lire la synthèse <i data-lucide="arrow-right"></i></a>
+        </article>
+
+        <!-- Veille 4 -->
+        <article class="veille-card" data-aos>
+          <div class="veille-top">
+            <div class="veille-icon v-code"><i data-lucide="terminal"></i></div>
+            <div>
+              <span class="veille-cat">Automatisation</span>
+              <span class="veille-date">Fév. 2025</span>
+            </div>
+          </div>
+          <h3>Automatisation réseau avec Python &amp; Ansible</h3>
+          <p>
+            Comparatif des outils d'automatisation réseau : Python (Netmiko, Paramiko) vs
+            Ansible pour la configuration en masse d'équipements et la gestion de configs.
+          </p>
+          <div class="veille-sources">
+            <i data-lucide="database"></i>
+            Sources : Network to Code · Ansible Docs · Real Python · Packet Pushers
+          </div>
+          <a href="#" class="veille-read">Lire la synthèse <i data-lucide="arrow-right"></i></a>
+        </article>
+
+      </div>
+
+      <!-- Outils de veille utilisés -->
+      <div class="veille-tools-box">
+        <h3>Mes outils de veille</h3>
+        <div class="tools-chips">
+          <span><i data-lucide="rss"></i> Feedly</span>
+          <span><i data-lucide="shield"></i> CERT-FR</span>
+          <span><i data-lucide="shield"></i> ANSSI</span>
+          <span><i data-lucide="linkedin"></i> LinkedIn</span>
+          <span><i data-lucide="youtube"></i> YouTube Tech</span>
+          <span><i data-lucide="book"></i> LeMagIT</span>
+          <span><i data-lucide="newspaper"></i> BleepingComputer</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 6 — ÉPREUVE E5
+       ================================================ -->
+  <section id="e5" class="section">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Épreuve E5 — BTS SIO</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">
+          L'épreuve E5 évalue les compétences de <strong>support et mise à disposition
+          de services informatiques</strong>. Voici mes situations professionnelles significatives.
+        </p>
+      </header>
+
+      <!-- Encadré référentiel -->
+      <div class="e5-ref-box">
+        <i data-lucide="info"></i>
+        <div>
+          <strong>Référentiel BTS SIO</strong> — Deux blocs :
+          <strong>B1</strong> Support et mise à disposition de services &
+          <strong>B2</strong> Cybersécurité des services informatiques.
+          Les situations ci-dessous illustrent ma maîtrise progressive de ces compétences en 1ère année.
+        </div>
+      </div>
+
+      <!-- Grille des situations professionnelles -->
+      <div class="e5-grid">
+
+        <!-- SP1 -->
+        <article class="e5-card" data-aos>
+          <div class="e5-num">SP1</div>
+          <div class="e5-content">
+            <div class="e5-badges">
+              <span class="e5-badge">B1.2</span>
+              <span class="e5-badge">B1.4</span>
+            </div>
+            <h3>Déploiement infrastructure réseau virtuelle</h3>
+            <blockquote class="e5-context">
+              Contexte : déployer une infrastructure réseau complète pour un réseau d'entreprise
+              simulé à Nexa Digital School (projet académique).
+            </blockquote>
+            <p>
+              Conception et déploiement d'un réseau local virtuel sous VirtualBox :
+              contrôleur de domaine Windows Server, clients Linux/Windows,
+              services DHCP et DNS centralisés, scripts de création de comptes.
+            </p>
+            <a href="#" class="e5-dl"><i data-lucide="download"></i> Télécharger le rapport</a>
+          </div>
+        </article>
+
+        <!-- SP2 -->
+        <article class="e5-card" data-aos>
+          <div class="e5-num">SP2</div>
+          <div class="e5-content">
+            <div class="e5-badges">
+              <span class="e5-badge">B2.1</span>
+              <span class="e5-badge">B2.3</span>
+            </div>
+            <h3>Segmentation et sécurisation réseau (VLANs + Firewall)</h3>
+            <blockquote class="e5-context">
+              Contexte : sécuriser un réseau de petite entreprise en isolant les services
+              sensibles et en contrôlant les flux inter-services.
+            </blockquote>
+            <p>
+              Maquettage d'une architecture multi-VLAN (R&D, Administration, Direction),
+              implémentation de règles de filtrage Firewall pour les flux inter-VLAN
+              et documentation de la politique de sécurité appliquée.
+            </p>
+            <a href="#" class="e5-dl"><i data-lucide="download"></i> Télécharger le rapport</a>
+          </div>
+        </article>
+
+        <!-- SP3 -->
+        <article class="e5-card" data-aos>
+          <div class="e5-num">SP3</div>
+          <div class="e5-content">
+            <div class="e5-badges">
+              <span class="e5-badge">B1.3</span>
+              <span class="e5-badge">B2.2</span>
+            </div>
+            <h3>Script de surveillance réseau automatisé</h3>
+            <blockquote class="e5-context">
+              Contexte : automatiser la supervision d'équipements réseau pour détecter
+              les coupures en temps réel sans intervention manuelle.
+            </blockquote>
+            <p>
+              Développement Python d'un outil de surveillance réseau par Ping cyclique,
+              avec système d'alertes automatiques, logs horodatés et rapport d'incidents.
+              Démonstration de l'automatisation des tâches d'administration.
+            </p>
+            <a href="#" class="e5-dl"><i data-lucide="download"></i> Télécharger le rapport</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Tableau de compétences -->
+      <div class="competences-tableau">
+        <h3>Tableau de synthèse des compétences</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Compétence</th>
+                <th>Niveau</th>
+                <th>SP associée(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-code">B1.2</td>
+                <td>Répondre aux incidents et demandes d'assistance</td>
+                <td><span class="badge-niveau maitrise">Maîtrisé</span></td>
+                <td>SP1, SP3</td>
+              </tr>
+              <tr>
+                <td class="td-code">B1.3</td>
+                <td>Développer la présence en ligne de l'organisation</td>
+                <td><span class="badge-niveau acquis">Acquis</span></td>
+                <td>SP3</td>
+              </tr>
+              <tr>
+                <td class="td-code">B1.4</td>
+                <td>Travailler en mode projet</td>
+                <td><span class="badge-niveau maitrise">Maîtrisé</span></td>
+                <td>SP1, SP2</td>
+              </tr>
+              <tr>
+                <td class="td-code">B2.1</td>
+                <td>Protéger les données à caractère personnel</td>
+                <td><span class="badge-niveau acquis">Acquis</span></td>
+                <td>SP2</td>
+              </tr>
+              <tr>
+                <td class="td-code">B2.2</td>
+                <td>Préserver l'identité numérique de l'organisation</td>
+                <td><span class="badge-niveau acquis">Acquis</span></td>
+                <td>SP3</td>
+              </tr>
+              <tr>
+                <td class="td-code">B2.3</td>
+                <td>Sécuriser les équipements et les usages</td>
+                <td><span class="badge-niveau maitrise">Maîtrisé</span></td>
+                <td>SP2, SP3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 7 — CONTACT
+       ================================================ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title">Me contacter</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">
+          Je suis à la recherche d'un stage (juillet 2026) et d'une alternance
+          (sept. 2026 → sept. 2027). N'hésitez pas à me contacter !
+        </p>
+      </header>
+
+      <div class="contact-layout">
+
+        <!-- Coordonnées -->
+        <div class="contact-coords">
+
+          <div class="coord-item">
+            <div class="coord-icon"><i data-lucide="mail"></i></div>
+            <div>
+              <span class="coord-label">Email</span>
+              <a href="mailto:khalidabenamar66@gmail.com" class="coord-val">
+                khalidabenamar66@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="coord-item">
+            <div class="coord-icon"><i data-lucide="phone"></i></div>
+            <div>
+              <span class="coord-label">Téléphone</span>
+              <a href="tel:0623060414" class="coord-val">06 23 06 04 14</a>
+            </div>
+          </div>
+
+          <div class="coord-item">
+            <div class="coord-icon"><i data-lucide="linkedin"></i></div>
+            <div>
+              <span class="coord-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/khalidabenamar-14555a2bb"
+                 target="_blank" rel="noopener" class="coord-val">
+                khalidabenamar-14555a2bb
+              </a>
+            </div>
+          </div>
+
+          <div class="coord-item">
+            <div class="coord-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <span class="coord-label">Localisation</span>
+              <span class="coord-val">Île-de-France — mobilité Paris &amp; région</span>
+            </div>
+          </div>
+
+          <!-- Bouton téléchargement CV -->
+          <a href="CV_Khalida_Benamar.pdf" download class="btn-cv-dl">
+            <i data-lucide="download"></i>
+            Télécharger mon CV
+          </a>
+
+          <!-- Disponibilité visuelle -->
+          <div class="dispo-box">
+            <div class="dispo-row">
+              <span class="dispo-dot green"></span>
+              <div>
+                <strong>Stage</strong>
+                <span>Juillet 2026 — Disponible</span>
+              </div>
+            </div>
+            <div class="dispo-row">
+              <span class="dispo-dot green"></span>
+              <div>
+                <strong>Alternance</strong>
+                <span>Sept. 2026 → Sept. 2027 (3j/2j)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <form class="contact-form" onsubmit="sendForm(event)">
+          <div class="form-row-2">
+            <div class="fgroup">
+              <label for="f-nom">Nom / Société</label>
+              <input type="text" id="f-nom" placeholder="Votre nom ou entreprise" required />
+            </div>
+            <div class="fgroup">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" placeholder="votre@email.fr" required />
+            </div>
+          </div>
+          <div class="fgroup">
+            <label for="f-sujet">Sujet</label>
+            <input type="text" id="f-sujet" placeholder="Proposition de stage, alternance…" required />
+          </div>
+          <div class="fgroup">
+            <label for="f-msg">Message</label>
+            <textarea id="f-msg" rows="5" placeholder="Décrivez votre proposition…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-send">
+            <i data-lucide="send"></i> Envoyer
+          </button>
+          <p id="form-ok" class="form-success" style="display:none">
+            ✓ Message envoyé ! Je vous répondrai très rapidement.
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       PIED DE PAGE
+       ================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Khalida Benamar — BTS SIO SISR · Nexa Digital School</span>
+      <span class="footer-copy">© 2025–2026 · Fait avec passion et beaucoup de café ☕</span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/khalidabenamar-14555a2bb" target="_blank" rel="noopener"><i data-lucide="linkedin"></i></a>
+        <a href="mailto:khalidabenamar66@gmail.com"><i data-lucide="mail"></i></a>
+        <a href="tel:0623060414"><i data-lucide="phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bouton retour en haut -->
+  <button class="back-top" id="backTop" aria-label="Retour en haut">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- ================================================
+       JAVASCRIPT
+       ================================================ -->
+  <script>
+    /* --- Init Lucide icons --- */
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      typewriter();
+      navbar();
+      scrollEffects();
+      customCursor();
+      backTop();
+    });
+
+    /* --- Typewriter hero --- */
+    function typewriter() {
+      const phrases = [
+        'Technicienne Systèmes & Réseaux',
+        'Étudiante BTS SIO option SISR',
+        'Passionnée de réseaux & sécurité',
+        'En recherche de stage & alternance',
+      ];
+      let pi = 0, ci = 0, del = false;
+      const el = document.getElementById('typewriter');
+      function tick() {
+        const p = phrases[pi];
+        el.textContent = del ? p.slice(0, ci--) : p.slice(0, ci++);
+        let wait = del ? 55 : 90;
+        if (!del && ci === p.length + 1) { wait = 2200; del = true; }
+        else if (del && ci < 0)          { del = false; ci = 0; pi = (pi+1) % phrases.length; wait = 400; }
+        setTimeout(tick, wait);
+      }
+      tick();
+    }
+
+    /* --- Navbar scroll --- */
+    function navbar() {
+      const nav = document.getElementById('navbar');
+      const burger = document.getElementById('burger');
+      const links = document.getElementById('navLinks');
+
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+      });
+      burger.addEventListener('click', () => {
+        links.classList.toggle('open');
+        burger.classList.toggle('active');
+      });
+      links.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          links.classList.remove('open');
+          burger.classList.remove('active');
+        });
+      });
+    }
+
+    /* --- Scroll reveal --- */
+    function scrollEffects() {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('revealed');
+            /* animer les barres de niveau */
+            e.target.querySelectorAll('.level-fill').forEach(b => {
+              b.style.width = b.style.getPropertyValue('--w') || '0%';
+            });
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('[data-aos], .tl-item').forEach(el => {
+        el.classList.add('aos-init');
+        obs.observe(el);
+      });
+    }
+
+    /* --- Curseur custom --- */
+    function customCursor() {
+      const c = document.getElementById('cursor');
+      document.addEventListener('mousemove', e => {
+        c.style.left = e.clientX + 'px';
+        c.style.top  = e.clientY + 'px';
+      });
+      document.querySelectorAll('a, button, .skill-card, .project-card').forEach(el => {
+        el.addEventListener('mouseenter', () => c.classList.add('big'));
+        el.addEventListener('mouseleave', () => c.classList.remove('big'));
+      });
+    }
+
+    /* --- Back to top --- */
+    function backTop() {
+      const btn = document.getElementById('backTop');
+      window.addEventListener('scroll', () => btn.classList.toggle('show', window.scrollY > 500));
+      btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    /* --- Formulaire contact (simulation) --- */
+    function sendForm(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Envoi…';
+      btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('form-ok').style.display = 'block';
+        e.target.reset();
+        btn.innerHTML = '<i data-lucide="send"></i> Envoyer';
+        btn.disabled = false;
+        lucide.createIcons();
+      }, 1400);
+    }
+  </script>
+
+</body>
+</html>
