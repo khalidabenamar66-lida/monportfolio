@@ -4,37 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Khalida Benamar — Portfolio BTS SIO SISR</title>
-
-  <!-- ================================================
-       FEUILLE DE STYLE EXTERNE
-       ================================================ -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Google Fonts : Playfair Display (display) + Space Mono (mono) + Nunito (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Space+Mono:wght@400;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Icônes Lucide -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
 </head>
 
 <body>
 
-  <!-- ================================================
-       CURSEUR PERSONNALISÉ
-       ================================================ -->
   <div class="cursor" id="cursor"></div>
 
-  <!-- ================================================
-       NAVIGATION FIXE
-       ================================================ -->
+  <!-- NAVIGATION -->
   <nav class="navbar" id="navbar">
-
-    <!-- Logo initiales -->
     <a href="#accueil" class="nav-logo">KB<span class="logo-accent">.</span></a>
-
-    <!-- Liens desktop -->
     <ul class="nav-links" id="navLinks">
       <li><a href="#accueil"     class="nav-link">Accueil</a></li>
       <li><a href="#apropos"     class="nav-link">À propos</a></li>
@@ -44,68 +27,45 @@
       <li><a href="#e5"          class="nav-link">Épreuve E5</a></li>
       <li><a href="#contact"     class="nav-link">Contact</a></li>
     </ul>
-
-    <!-- Bouton CV -->
-    <a href="CV_Khalida_Benamar.pdf" download class="btn-nav-cv">
+    <a href="CV_2026-05-19_Khalida_Benamar.pdf" download class="btn-nav-cv">
       <i data-lucide="download" class="icon-sm"></i> CV
     </a>
-
-    <!-- Burger mobile -->
     <button class="burger" id="burger" aria-label="Ouvrir le menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- ================================================
-       SECTION 1 — ACCUEIL (HERO)
-       ================================================ -->
+  <!-- SECTION 1 — ACCUEIL -->
   <section id="accueil" class="hero">
-
-    <!-- Fond animé : grille + orbes -->
     <div class="hero-bg" aria-hidden="true">
       <div class="orb orb-1"></div>
       <div class="orb orb-2"></div>
       <div class="grid-overlay"></div>
     </div>
-
     <div class="hero-inner">
-
-      <!-- Colonne gauche : texte -->
       <div class="hero-text">
-
-        <!-- Badge disponibilité -->
         <div class="availability-badge">
           <span class="pulse-dot"></span>
           Disponible — Stage juillet 2026 &amp; Alternance sept. 2026
         </div>
-
-        <!-- Nom principal -->
         <h1 class="hero-name">
           <span class="name-first">Khalida</span>
           <span class="name-last">Benamar</span>
         </h1>
-
-        <!-- Titre métier avec typewriter -->
         <p class="hero-role">
           <span class="role-prefix">// </span>
           <span id="typewriter"></span><span class="caret">▌</span>
         </p>
-
-        <!-- Accroche courte -->
         <p class="hero-pitch">
           Étudiante en <strong>BTS SIO option SISR</strong> à Nexa Digital School — Paris.
           Passionnée par les réseaux, la sécurité et l'administration systèmes.
           Issue d'un Bac Mathématiques et d'une Licence Programmation à la Sorbonne,
           j'apporte rigueur analytique et logique structurée à chaque défi technique.
         </p>
-
-        <!-- Appels à l'action -->
         <div class="hero-cta">
           <a href="#projets" class="btn-primary">Voir mes projets</a>
           <a href="#contact" class="btn-outline">Me contacter</a>
         </div>
-
-        <!-- Liens rapides réseaux sociaux -->
         <div class="hero-socials">
           <a href="https://www.linkedin.com/in/khalidabenamar-14555a2bb" target="_blank" rel="noopener" aria-label="LinkedIn">
             <i data-lucide="linkedin"></i>
@@ -118,11 +78,8 @@
           </a>
         </div>
       </div>
-
-      <!-- Colonne droite : carte identité visuelle -->
       <div class="hero-card-wrap">
         <div class="id-card">
-          <!-- Photo placeholder / avatar -->
           <div class="id-photo">
             <svg viewBox="0 0 160 180" xmlns="http://www.w3.org/2000/svg">
               <rect width="160" height="180" fill="#1a1a2e"/>
@@ -131,7 +88,6 @@
             </svg>
             <div class="id-photo-label">Khalida B.</div>
           </div>
-          <!-- Infos sur la carte -->
           <div class="id-info">
             <div class="id-row"><span class="id-key">Formation</span><span class="id-val">BTS SIO SISR</span></div>
             <div class="id-row"><span class="id-key">École</span><span class="id-val">Nexa Digital School</span></div>
@@ -139,38 +95,29 @@
             <div class="id-row"><span class="id-key">Lieu</span><span class="id-val">Île-de-France</span></div>
             <div class="id-row"><span class="id-key">Dispo.</span><span class="id-val id-green">Immédiate</span></div>
           </div>
-          <!-- Bande décorative bas de carte -->
           <div class="id-strip">
             <span>SISR</span><span>·</span><span>RÉSEAU</span><span>·</span><span>SÉCURITÉ</span>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Indicateur scroll -->
     <a href="#apropos" class="scroll-hint" aria-label="Défiler">
       <i data-lucide="chevrons-down"></i>
     </a>
   </section>
 
-  <!-- ================================================
-       SECTION 2 — À PROPOS
-       ================================================ -->
+  <!-- SECTION 2 — À PROPOS -->
   <section id="apropos" class="section">
     <div class="container">
-
       <header class="section-header">
         <span class="section-num">01</span>
         <h2 class="section-title">À propos de moi</h2>
         <div class="section-line"></div>
       </header>
-
       <div class="about-layout">
-
-        <!-- Bloc texte -->
         <div class="about-body">
           <p class="about-intro">
-            Je m'appelle <strong>Khalida Benamar</strong>, j'ai 21 ans et je suis étudiante en
+            Je m'appelle <strong>Khalida Benamar</strong> et je suis étudiante en
             première année de <strong>BTS SIO option SISR</strong> à Nexa Digital School, Paris,
             depuis septembre 2025.
           </p>
@@ -187,8 +134,6 @@
             sécurité avec méthode et rigueur. Je parle <strong>arabe</strong> (bilingue)
             et <strong>anglais</strong> (niveau technique).
           </p>
-
-          <!-- Ce que je cherche -->
           <div class="recherche-box">
             <i data-lucide="search"></i>
             <div>
@@ -201,11 +146,8 @@
             </div>
           </div>
         </div>
-
-        <!-- Timeline formation & expériences -->
         <div class="about-timeline">
           <h3 class="timeline-title">Mon parcours</h3>
-
           <div class="tl-item">
             <div class="tl-icon edu"><i data-lucide="graduation-cap"></i></div>
             <div class="tl-body">
@@ -214,7 +156,6 @@
               <p>Nexa Digital School, Paris</p>
             </div>
           </div>
-
           <div class="tl-item">
             <div class="tl-icon edu"><i data-lucide="book-open"></i></div>
             <div class="tl-body">
@@ -223,7 +164,6 @@
               <p>Sorbonne USPN, Paris</p>
             </div>
           </div>
-
           <div class="tl-item">
             <div class="tl-icon edu"><i data-lucide="award"></i></div>
             <div class="tl-body">
@@ -232,7 +172,6 @@
               <p>Mention obtenue</p>
             </div>
           </div>
-
           <div class="tl-item">
             <div class="tl-icon work"><i data-lucide="briefcase"></i></div>
             <div class="tl-body">
@@ -241,7 +180,6 @@
               <p>Intermarché, Paris — Management, résolution de problèmes</p>
             </div>
           </div>
-
           <div class="tl-item">
             <div class="tl-icon work"><i data-lucide="scale"></i></div>
             <div class="tl-body">
@@ -255,22 +193,15 @@
     </div>
   </section>
 
-  <!-- ================================================
-       SECTION 3 — COMPÉTENCES
-       ================================================ -->
+  <!-- SECTION 3 — COMPÉTENCES -->
   <section id="competences" class="section section-alt">
     <div class="container">
-
       <header class="section-header">
         <span class="section-num">02</span>
         <h2 class="section-title">Compétences techniques</h2>
         <div class="section-line"></div>
       </header>
-
-      <!-- Grille des blocs compétences -->
       <div class="skills-grid">
-
-        <!-- Réseaux -->
         <div class="skill-card" data-aos>
           <div class="skill-head">
             <div class="skill-icon net"><i data-lucide="network"></i></div>
@@ -287,8 +218,6 @@
             <span class="level-pct">78 %</span>
           </div>
         </div>
-
-        <!-- Administration systèmes -->
         <div class="skill-card" data-aos>
           <div class="skill-head">
             <div class="skill-icon sys"><i data-lucide="server"></i></div>
@@ -305,8 +234,6 @@
             <span class="level-pct">75 %</span>
           </div>
         </div>
-
-        <!-- Scripting & Programmation -->
         <div class="skill-card" data-aos>
           <div class="skill-head">
             <div class="skill-icon code"><i data-lucide="code-2"></i></div>
@@ -323,8 +250,6 @@
             <span class="level-pct">72 %</span>
           </div>
         </div>
-
-        <!-- Virtualisation -->
         <div class="skill-card" data-aos>
           <div class="skill-head">
             <div class="skill-icon virt"><i data-lucide="layers"></i></div>
@@ -341,8 +266,6 @@
             <span class="level-pct">70 %</span>
           </div>
         </div>
-
-        <!-- Sécurité -->
         <div class="skill-card" data-aos>
           <div class="skill-head">
             <div class="skill-icon secu"><i data-lucide="shield"></i></div>
@@ -359,8 +282,6 @@
             <span class="level-pct">65 %</span>
           </div>
         </div>
-
-        <!-- Langues & soft skills -->
         <div class="skill-card" data-aos>
           <div class="skill-head">
             <div class="skill-icon lang"><i data-lucide="globe"></i></div>
@@ -377,109 +298,82 @@
             <span class="level-pct">90 %</span>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ================================================
-       SECTION 4 — PROJETS ACADÉMIQUES
-       ================================================ -->
+  <!-- SECTION 4 — PROJETS ACADÉMIQUES -->
   <section id="projets" class="section">
     <div class="container">
-
       <header class="section-header">
         <span class="section-num">03</span>
         <h2 class="section-title">Projets académiques</h2>
         <div class="section-line"></div>
       </header>
+      <div class="projects-grid projects-grid-2">
 
-      <div class="projects-grid">
-
-        <!-- Projet 1 : Script surveillance réseau -->
-        <article class="project-card" data-aos>
-          <div class="project-banner banner-py">
-            <i data-lucide="activity"></i>
-            <span class="project-date">Depuis avril 2026</span>
-          </div>
-          <div class="project-body">
-            <div class="project-chips">
-              <span class="chip">Python</span>
-              <span class="chip">Réseau</span>
-              <span class="chip">Automatisation</span>
-            </div>
-            <h3>Scripting de surveillance réseau</h3>
-            <p>
-              Développement d'un script Python réalisant des tests de connectivité (Ping)
-              réguliers sur des équipements cibles, avec génération d'alertes automatiques
-              en cas de coupure réseau détectée.
-            </p>
-            <ul class="project-details">
-              <li><i data-lucide="check-circle"></i> Ping automatisé sur liste d'équipements</li>
-              <li><i data-lucide="check-circle"></i> Système d'alerte en cas de défaillance</li>
-              <li><i data-lucide="check-circle"></i> Logs horodatés des incidents</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" class="proj-link"><i data-lucide="file-text"></i> Rapport</a>
-              <a href="#" class="proj-link"><i data-lucide="github"></i> GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Projet 2 : Infrastructure réseau virtuelle -->
+        <!-- Projet 1 : Serveur DHCP -->
         <article class="project-card" data-aos>
           <div class="project-banner banner-net">
             <i data-lucide="server"></i>
-            <span class="project-date">Janv. → Mars 2026</span>
+            <span class="project-date">SP1 — Mai 2026</span>
           </div>
           <div class="project-body">
             <div class="project-chips">
-              <span class="chip">VirtualBox</span>
-              <span class="chip">Windows Server</span>
-              <span class="chip">DHCP · DNS</span>
+              <span class="chip">Linux Debian 12</span>
+              <span class="chip">VMware</span>
+              <span class="chip">DHCP</span>
+              <span class="chip">Réseau</span>
             </div>
-            <h3>Déploiement d'une infrastructure réseau locale virtuelle</h3>
+            <h3>Déploiement d'un Serveur DHCP sous Linux Debian 12</h3>
             <p>
-              Conception d'un réseau local virtuel sous VirtualBox avec contrôleur de domaine
-              Windows Server, clients Linux et Windows, et centralisation des services réseau.
+              Installation et configuration complète d'un serveur DHCP avec isc-dhcp-server
+              sur Debian 12 dans VMware Workstation. Attribution automatique d'adresses IP
+              aux clients sur un réseau Host-only virtualisé.
             </p>
             <ul class="project-details">
-              <li><i data-lucide="check-circle"></i> Contrôleur de domaine Windows Server</li>
-              <li><i data-lucide="check-circle"></i> Serveurs DHCP &amp; DNS configurés</li>
-              <li><i data-lucide="check-circle"></i> Scripts de création de comptes utilisateurs</li>
+              <li><i data-lucide="check-circle"></i> VM Debian 12 configurée (IP fixe 192.168.100.1)</li>
+              <li><i data-lucide="check-circle"></i> Service isc-dhcp-server — plage .100 à .200</li>
+              <li><i data-lucide="check-circle"></i> Validation : client Windows reçoit IP automatiquement</li>
+              <li><i data-lucide="check-circle"></i> Compétences : B1.1 · B1.5 · Cyber</li>
             </ul>
             <div class="project-links">
-              <a href="#" class="proj-link"><i data-lucide="file-text"></i> Rapport</a>
-              <a href="#" class="proj-link"><i data-lucide="github"></i> GitHub</a>
+              <a href="Documentation_DHCP_Khalida_Benamar.pdf" target="_blank" class="proj-link">
+                <i data-lucide="file-text"></i> Documentation
+              </a>
             </div>
           </div>
         </article>
 
-        <!-- Projet 3 : Segmentation et sécurisation réseau -->
+        <!-- Projet 2 : Active Directory -->
         <article class="project-card" data-aos>
           <div class="project-banner banner-secu">
-            <i data-lucide="shield-check"></i>
-            <span class="project-date">Fév. → Mars 2026</span>
+            <i data-lucide="users"></i>
+            <span class="project-date">SP2 — Mai 2026</span>
           </div>
           <div class="project-body">
             <div class="project-chips">
-              <span class="chip">VLANs</span>
-              <span class="chip">Firewall</span>
-              <span class="chip">Sécurité</span>
+              <span class="chip">Windows Server 2022</span>
+              <span class="chip">Active Directory</span>
+              <span class="chip">GPO</span>
+              <span class="chip">VMware</span>
             </div>
-            <h3>Segmentation et sécurisation d'un réseau de PME</h3>
+            <h3>Déploiement d'un Active Directory sous Windows Server 2022</h3>
             <p>
-              Maquettage d'une architecture réseau avec plusieurs VLANs isolant les services
-              R&amp;D, Administration et Direction, avec filtrage inter-VLAN par pare-feu.
+              Installation et configuration d'un contrôleur de domaine Active Directory
+              (nexa-school.local) sous Windows Server 2022. Création des OU, comptes
+              utilisateurs, groupes de sécurité et application de GPO.
             </p>
             <ul class="project-details">
-              <li><i data-lucide="check-circle"></i> VLANs : R&D / Admin / Direction</li>
-              <li><i data-lucide="check-circle"></i> Règles de filtrage Firewall</li>
-              <li><i data-lucide="check-circle"></i> Sécurisation des flux inter-VLAN</li>
+              <li><i data-lucide="check-circle"></i> Domaine nexa-school.local créé et opérationnel</li>
+              <li><i data-lucide="check-circle"></i> OU : Direction, Informatique, Étudiants</li>
+              <li><i data-lucide="check-circle"></i> GPO : politique mots de passe, jonction client</li>
+              <li><i data-lucide="check-circle"></i> Compétences : B1.2 · B1.4 · B2.3</li>
             </ul>
             <div class="project-links">
-              <a href="#" class="proj-link"><i data-lucide="file-text"></i> Rapport</a>
-              <a href="#" class="proj-link"><i data-lucide="github"></i> GitHub</a>
+              <a href="Documentation_ActiveDirectory_Khalida_Benamar.pdf" target="_blank" class="proj-link">
+                <i data-lucide="file-text"></i> Documentation
+              </a>
             </div>
           </div>
         </article>
@@ -488,12 +382,9 @@
     </div>
   </section>
 
-  <!-- ================================================
-       SECTION 5 — VEILLES TECHNOLOGIQUES
-       ================================================ -->
+  <!-- SECTION 5 — VEILLES -->
   <section id="veilles" class="section section-alt">
     <div class="container">
-
       <header class="section-header">
         <span class="section-num">04</span>
         <h2 class="section-title">Veilles technologiques</h2>
@@ -503,10 +394,7 @@
           des domaines qui me passionnent pour rester à jour.
         </p>
       </header>
-
       <div class="veilles-grid">
-
-        <!-- Veille 1 -->
         <article class="veille-card" data-aos>
           <div class="veille-top">
             <div class="veille-icon v-secu"><i data-lucide="lock"></i></div>
@@ -526,8 +414,6 @@
           </div>
           <a href="#" class="veille-read">Lire la synthèse <i data-lucide="arrow-right"></i></a>
         </article>
-
-        <!-- Veille 2 -->
         <article class="veille-card" data-aos>
           <div class="veille-top">
             <div class="veille-icon v-net"><i data-lucide="wifi"></i></div>
@@ -547,8 +433,6 @@
           </div>
           <a href="#" class="veille-read">Lire la synthèse <i data-lucide="arrow-right"></i></a>
         </article>
-
-        <!-- Veille 3 -->
         <article class="veille-card" data-aos>
           <div class="veille-top">
             <div class="veille-icon v-sys"><i data-lucide="cpu"></i></div>
@@ -568,8 +452,6 @@
           </div>
           <a href="#" class="veille-read">Lire la synthèse <i data-lucide="arrow-right"></i></a>
         </article>
-
-        <!-- Veille 4 -->
         <article class="veille-card" data-aos>
           <div class="veille-top">
             <div class="veille-icon v-code"><i data-lucide="terminal"></i></div>
@@ -589,10 +471,7 @@
           </div>
           <a href="#" class="veille-read">Lire la synthèse <i data-lucide="arrow-right"></i></a>
         </article>
-
       </div>
-
-      <!-- Outils de veille utilisés -->
       <div class="veille-tools-box">
         <h3>Mes outils de veille</h3>
         <div class="tools-chips">
@@ -605,16 +484,12 @@
           <span><i data-lucide="newspaper"></i> BleepingComputer</span>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ================================================
-       SECTION 6 — ÉPREUVE E5
-       ================================================ -->
+  <!-- SECTION 6 — ÉPREUVE E5 -->
   <section id="e5" class="section">
     <div class="container">
-
       <header class="section-header">
         <span class="section-num">05</span>
         <h2 class="section-title">Épreuve E5 — BTS SIO</h2>
@@ -625,11 +500,10 @@
         </p>
       </header>
 
-      <!-- Encadré référentiel -->
       <div class="e5-ref-box">
         <i data-lucide="info"></i>
         <div>
-          <strong>Référentiel BTS SIO</strong> — Deux blocs :
+          <strong>Référentiel BTS SIO — Session 2026</strong> — Deux blocs :
           <strong>B1</strong> Support et mise à disposition de services &
           <strong>B2</strong> Cybersécurité des services informatiques.
           Les situations ci-dessous illustrent ma maîtrise progressive de ces compétences en 1ère année.
@@ -639,138 +513,151 @@
       <!-- Grille des situations professionnelles -->
       <div class="e5-grid">
 
-        <!-- SP1 -->
+        <!-- SP1 — DHCP -->
         <article class="e5-card" data-aos>
           <div class="e5-num">SP1</div>
           <div class="e5-content">
             <div class="e5-badges">
-              <span class="e5-badge">B1.2</span>
-              <span class="e5-badge">B1.4</span>
+              <span class="e5-badge">B1.1</span>
+              <span class="e5-badge">B1.5</span>
+              <span class="e5-badge">Cyber</span>
             </div>
-            <h3>Déploiement infrastructure réseau virtuelle</h3>
+            <h3>Déploiement d'un Serveur DHCP — Linux Debian 12</h3>
             <blockquote class="e5-context">
-              Contexte : déployer une infrastructure réseau complète pour un réseau d'entreprise
-              simulé à Nexa Digital School (projet académique).
+              Contexte : automatiser l'attribution d'adresses IP dans un réseau d'entreprise
+              simulé, en déployant un serveur DHCP complet sous Linux Debian 12 sur VMware.
             </blockquote>
             <p>
-              Conception et déploiement d'un réseau local virtuel sous VirtualBox :
-              contrôleur de domaine Windows Server, clients Linux/Windows,
-              services DHCP et DNS centralisés, scripts de création de comptes.
+              Installation d'une VM Debian 12 avec adresse IP fixe (192.168.100.1),
+              configuration du service isc-dhcp-server, définition d'une plage d'adresses
+              (.100 à .200), validation de l'attribution automatique côté client Windows.
             </p>
-            <a href="#" class="e5-dl"><i data-lucide="download"></i> Télécharger le rapport</a>
+            <a href="Documentation_DHCP_Khalida_Benamar.pdf" target="_blank" class="e5-dl">
+              <i data-lucide="download"></i> Télécharger la documentation
+            </a>
           </div>
         </article>
 
-        <!-- SP2 -->
+        <!-- SP2 — Active Directory -->
         <article class="e5-card" data-aos>
           <div class="e5-num">SP2</div>
           <div class="e5-content">
             <div class="e5-badges">
-              <span class="e5-badge">B2.1</span>
+              <span class="e5-badge">B1.2</span>
+              <span class="e5-badge">B1.4</span>
               <span class="e5-badge">B2.3</span>
             </div>
-            <h3>Segmentation et sécurisation réseau (VLANs + Firewall)</h3>
+            <h3>Déploiement d'un Active Directory — Windows Server 2022</h3>
             <blockquote class="e5-context">
-              Contexte : sécuriser un réseau de petite entreprise en isolant les services
-              sensibles et en contrôlant les flux inter-services.
+              Contexte : centraliser la gestion des identités et des accès d'un réseau
+              d'entreprise via un contrôleur de domaine Active Directory.
             </blockquote>
             <p>
-              Maquettage d'une architecture multi-VLAN (R&D, Administration, Direction),
-              implémentation de règles de filtrage Firewall pour les flux inter-VLAN
-              et documentation de la politique de sécurité appliquée.
+              Installation de Windows Server 2022, création du domaine nexa-school.local,
+              organisation en OU (Direction, Informatique, Étudiants), création de comptes
+              utilisateurs, application de GPO sécurité et jonction de postes clients.
             </p>
-            <a href="#" class="e5-dl"><i data-lucide="download"></i> Télécharger le rapport</a>
-          </div>
-        </article>
-
-        <!-- SP3 -->
-        <article class="e5-card" data-aos>
-          <div class="e5-num">SP3</div>
-          <div class="e5-content">
-            <div class="e5-badges">
-              <span class="e5-badge">B1.3</span>
-              <span class="e5-badge">B2.2</span>
-            </div>
-            <h3>Script de surveillance réseau automatisé</h3>
-            <blockquote class="e5-context">
-              Contexte : automatiser la supervision d'équipements réseau pour détecter
-              les coupures en temps réel sans intervention manuelle.
-            </blockquote>
-            <p>
-              Développement Python d'un outil de surveillance réseau par Ping cyclique,
-              avec système d'alertes automatiques, logs horodatés et rapport d'incidents.
-              Démonstration de l'automatisation des tâches d'administration.
-            </p>
-            <a href="#" class="e5-dl"><i data-lucide="download"></i> Télécharger le rapport</a>
+            <a href="Documentation_ActiveDirectory_Khalida_Benamar.pdf" target="_blank" class="e5-dl">
+              <i data-lucide="download"></i> Télécharger la documentation
+            </a>
           </div>
         </article>
 
       </div>
 
-      <!-- Tableau de compétences -->
+      <!-- Tableau de synthèse officiel E5 BTS SIO 2026 -->
       <div class="competences-tableau">
-        <h3>Tableau de synthèse des compétences</h3>
+        <h3>Tableau de synthèse des réalisations professionnelles — Annexe VI.1</h3>
+        <p class="tableau-subtitle">BTS Services Informatiques aux Organisations — Session 2026 · Option SISR</p>
         <div class="table-wrap">
-          <table>
+          <table class="e5-synthese-table">
             <thead>
               <tr>
-                <th>Code</th>
-                <th>Compétence</th>
-                <th>Niveau</th>
-                <th>SP associée(s)</th>
+                <th rowspan="2" class="th-realisation">Réalisations professionnelles</th>
+                <th rowspan="2" class="th-periode">Période</th>
+                <th colspan="6" class="th-competences-group">Compétences mises en œuvre</th>
+              </tr>
+              <tr>
+                <th class="th-comp th-b11">B1.1<br><span>Gérer le patrimoine informatique</span></th>
+                <th class="th-comp th-b12">B1.2<br><span>Répondre aux incidents</span></th>
+                <th class="th-comp th-b13">B1.3<br><span>Présence en ligne</span></th>
+                <th class="th-comp th-b14">B1.4<br><span>Travailler en mode projet</span></th>
+                <th class="th-comp th-b15">B1.5<br><span>Mettre à disposition des services</span></th>
+                <th class="th-comp th-b16">B1.6<br><span>Développement professionnel</span></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="td-code">B1.2</td>
-                <td>Répondre aux incidents et demandes d'assistance</td>
-                <td><span class="badge-niveau maitrise">Maîtrisé</span></td>
-                <td>SP1, SP3</td>
+                <td class="td-realisation">
+                  <strong>SP1 — Déploiement d'un Serveur DHCP</strong><br>
+                  <span class="td-docs">Linux Debian 12 · VMware Workstation · isc-dhcp-server</span><br>
+                  <a href="Documentation_DHCP_Khalida_Benamar.pdf" target="_blank" class="td-link"><i data-lucide="file-text"></i> Documentation technique</a>
+                </td>
+                <td class="td-periode">01/05/2026<br>au<br>28/05/2026</td>
+                <td class="td-check checked">✓</td>
+                <td class="td-check"></td>
+                <td class="td-check"></td>
+                <td class="td-check"></td>
+                <td class="td-check checked">✓</td>
+                <td class="td-check"></td>
               </tr>
               <tr>
-                <td class="td-code">B1.3</td>
-                <td>Développer la présence en ligne de l'organisation</td>
-                <td><span class="badge-niveau acquis">Acquis</span></td>
-                <td>SP3</td>
-              </tr>
-              <tr>
-                <td class="td-code">B1.4</td>
-                <td>Travailler en mode projet</td>
-                <td><span class="badge-niveau maitrise">Maîtrisé</span></td>
-                <td>SP1, SP2</td>
-              </tr>
-              <tr>
-                <td class="td-code">B2.1</td>
-                <td>Protéger les données à caractère personnel</td>
-                <td><span class="badge-niveau acquis">Acquis</span></td>
-                <td>SP2</td>
-              </tr>
-              <tr>
-                <td class="td-code">B2.2</td>
-                <td>Préserver l'identité numérique de l'organisation</td>
-                <td><span class="badge-niveau acquis">Acquis</span></td>
-                <td>SP3</td>
-              </tr>
-              <tr>
-                <td class="td-code">B2.3</td>
-                <td>Sécuriser les équipements et les usages</td>
-                <td><span class="badge-niveau maitrise">Maîtrisé</span></td>
-                <td>SP2, SP3</td>
+                <td class="td-realisation">
+                  <strong>SP2 — Déploiement d'un Active Directory</strong><br>
+                  <span class="td-docs">Windows Server 2022 · VMware · AD DS · GPO · DNS</span><br>
+                  <a href="Documentation_ActiveDirectory_Khalida_Benamar.pdf" target="_blank" class="td-link"><i data-lucide="file-text"></i> Documentation technique</a>
+                </td>
+                <td class="td-periode">01/05/2026<br>au<br>28/05/2026</td>
+                <td class="td-check"></td>
+                <td class="td-check checked">✓</td>
+                <td class="td-check"></td>
+                <td class="td-check checked">✓</td>
+                <td class="td-check"></td>
+                <td class="td-check"></td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
 
+        <!-- Documents téléchargeables -->
+        <div class="e5-docs-row">
+          <a href="CV_2026-05-19_Khalida_Benamar.pdf" download class="e5-doc-btn">
+            <i data-lucide="download"></i>
+            <div>
+              <strong>Mon CV</strong>
+              <span>Khalida Benamar — BTS SIO SISR</span>
+            </div>
+          </a>
+          <a href="Lettre_Motivation_Khalida_Benamar.pdf" download class="e5-doc-btn">
+            <i data-lucide="file-text"></i>
+            <div>
+              <strong>Lettre de motivation</strong>
+              <span>Alternance sept. 2026 – sept. 2027</span>
+            </div>
+          </a>
+          <a href="Documentation_DHCP_Khalida_Benamar.pdf" target="_blank" class="e5-doc-btn">
+            <i data-lucide="server"></i>
+            <div>
+              <strong>Documentation SP1</strong>
+              <span>Serveur DHCP — Debian 12</span>
+            </div>
+          </a>
+          <a href="Documentation_ActiveDirectory_Khalida_Benamar.pdf" target="_blank" class="e5-doc-btn">
+            <i data-lucide="users"></i>
+            <div>
+              <strong>Documentation SP2</strong>
+              <span>Active Directory — Windows Server</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- ================================================
-       SECTION 7 — CONTACT
-       ================================================ -->
+  <!-- SECTION 7 — CONTACT -->
   <section id="contact" class="section section-alt">
     <div class="container">
-
       <header class="section-header">
         <span class="section-num">06</span>
         <h2 class="section-title">Me contacter</h2>
@@ -780,22 +667,15 @@
           (sept. 2026 → sept. 2027). N'hésitez pas à me contacter !
         </p>
       </header>
-
       <div class="contact-layout">
-
-        <!-- Coordonnées -->
         <div class="contact-coords">
-
           <div class="coord-item">
             <div class="coord-icon"><i data-lucide="mail"></i></div>
             <div>
               <span class="coord-label">Email</span>
-              <a href="mailto:khalidabenamar66@gmail.com" class="coord-val">
-                khalidabenamar66@gmail.com
-              </a>
+              <a href="mailto:khalidabenamar66@gmail.com" class="coord-val">khalidabenamar66@gmail.com</a>
             </div>
           </div>
-
           <div class="coord-item">
             <div class="coord-icon"><i data-lucide="phone"></i></div>
             <div>
@@ -803,18 +683,13 @@
               <a href="tel:0623060414" class="coord-val">06 23 06 04 14</a>
             </div>
           </div>
-
           <div class="coord-item">
             <div class="coord-icon"><i data-lucide="linkedin"></i></div>
             <div>
               <span class="coord-label">LinkedIn</span>
-              <a href="https://www.linkedin.com/in/khalidabenamar-14555a2bb"
-                 target="_blank" rel="noopener" class="coord-val">
-                khalidabenamar-14555a2bb
-              </a>
+              <a href="https://www.linkedin.com/in/khalidabenamar-14555a2bb" target="_blank" rel="noopener" class="coord-val">khalidabenamar-14555a2bb</a>
             </div>
           </div>
-
           <div class="coord-item">
             <div class="coord-icon"><i data-lucide="map-pin"></i></div>
             <div>
@@ -822,14 +697,10 @@
               <span class="coord-val">Île-de-France — mobilité Paris &amp; région</span>
             </div>
           </div>
-
-          <!-- Bouton téléchargement CV -->
-          <a href="CV_Khalida_Benamar.pdf" download class="btn-cv-dl">
+          <a href="CV_2026-05-19_Khalida_Benamar.pdf" download class="btn-cv-dl">
             <i data-lucide="download"></i>
             Télécharger mon CV
           </a>
-
-          <!-- Disponibilité visuelle -->
           <div class="dispo-box">
             <div class="dispo-row">
               <span class="dispo-dot green"></span>
@@ -847,8 +718,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Formulaire de contact -->
         <form class="contact-form" onsubmit="sendForm(event)">
           <div class="form-row-2">
             <div class="fgroup">
@@ -875,14 +744,11 @@
             ✓ Message envoyé ! Je vous répondrai très rapidement.
           </p>
         </form>
-
       </div>
     </div>
   </section>
 
-  <!-- ================================================
-       PIED DE PAGE
-       ================================================ -->
+  <!-- PIED DE PAGE -->
   <footer class="footer">
     <div class="footer-inner">
       <span class="footer-name">Khalida Benamar — BTS SIO SISR · Nexa Digital School</span>
@@ -895,16 +761,11 @@
     </div>
   </footer>
 
-  <!-- Bouton retour en haut -->
   <button class="back-top" id="backTop" aria-label="Retour en haut">
     <i data-lucide="arrow-up"></i>
   </button>
 
-  <!-- ================================================
-       JAVASCRIPT
-       ================================================ -->
   <script>
-    /* --- Init Lucide icons --- */
     document.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
       typewriter();
@@ -914,7 +775,6 @@
       backTop();
     });
 
-    /* --- Typewriter hero --- */
     function typewriter() {
       const phrases = [
         'Technicienne Systèmes & Réseaux',
@@ -929,74 +789,48 @@
         el.textContent = del ? p.slice(0, ci--) : p.slice(0, ci++);
         let wait = del ? 55 : 90;
         if (!del && ci === p.length + 1) { wait = 2200; del = true; }
-        else if (del && ci < 0)          { del = false; ci = 0; pi = (pi+1) % phrases.length; wait = 400; }
+        else if (del && ci < 0) { del = false; ci = 0; pi = (pi+1) % phrases.length; wait = 400; }
         setTimeout(tick, wait);
       }
       tick();
     }
 
-    /* --- Navbar scroll --- */
     function navbar() {
       const nav = document.getElementById('navbar');
       const burger = document.getElementById('burger');
       const links = document.getElementById('navLinks');
-
-      window.addEventListener('scroll', () => {
-        nav.classList.toggle('scrolled', window.scrollY > 60);
-      });
-      burger.addEventListener('click', () => {
-        links.classList.toggle('open');
-        burger.classList.toggle('active');
-      });
-      links.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => {
-          links.classList.remove('open');
-          burger.classList.remove('active');
-        });
-      });
+      window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+      burger.addEventListener('click', () => { links.classList.toggle('open'); burger.classList.toggle('active'); });
+      links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { links.classList.remove('open'); burger.classList.remove('active'); }));
     }
 
-    /* --- Scroll reveal --- */
     function scrollEffects() {
       const obs = new IntersectionObserver(entries => {
         entries.forEach(e => {
           if (e.isIntersecting) {
             e.target.classList.add('revealed');
-            /* animer les barres de niveau */
-            e.target.querySelectorAll('.level-fill').forEach(b => {
-              b.style.width = b.style.getPropertyValue('--w') || '0%';
-            });
+            e.target.querySelectorAll('.level-fill').forEach(b => b.style.width = b.style.getPropertyValue('--w') || '0%');
           }
         });
       }, { threshold: 0.12 });
-
-      document.querySelectorAll('[data-aos], .tl-item').forEach(el => {
-        el.classList.add('aos-init');
-        obs.observe(el);
-      });
+      document.querySelectorAll('[data-aos], .tl-item').forEach(el => { el.classList.add('aos-init'); obs.observe(el); });
     }
 
-    /* --- Curseur custom --- */
     function customCursor() {
       const c = document.getElementById('cursor');
-      document.addEventListener('mousemove', e => {
-        c.style.left = e.clientX + 'px';
-        c.style.top  = e.clientY + 'px';
-      });
+      document.addEventListener('mousemove', e => { c.style.left = e.clientX + 'px'; c.style.top = e.clientY + 'px'; });
       document.querySelectorAll('a, button, .skill-card, .project-card').forEach(el => {
         el.addEventListener('mouseenter', () => c.classList.add('big'));
         el.addEventListener('mouseleave', () => c.classList.remove('big'));
       });
     }
 
-    /* --- Back to top --- */
     function backTop() {
       const btn = document.getElementById('backTop');
       window.addEventListener('scroll', () => btn.classList.toggle('show', window.scrollY > 500));
       btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     }
 
-    /* --- Formulaire contact (simulation) --- */
     function sendForm(e) {
       e.preventDefault();
       const btn = e.target.querySelector('button[type="submit"]');
@@ -1011,6 +845,5 @@
       }, 1400);
     }
   </script>
-
 </body>
 </html>
